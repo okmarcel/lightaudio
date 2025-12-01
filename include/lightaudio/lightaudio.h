@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-#include "lightaudio/la_buffer.h"
+#include "lightaudio/buffer.h"
 
 #endif
 
