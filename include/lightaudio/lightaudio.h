@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 #include "lightaudio/buffer.h"
+#include "lightaudio/utils.h"
 
 #endif
 
