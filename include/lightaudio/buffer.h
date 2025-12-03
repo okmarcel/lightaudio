@@ -14,11 +14,13 @@ typedef struct {
 	uint32_t size;
 } la_buffer;
 
+
+/* BUFFER FUNCTIONS */
 /* Initialize buffer
  * 'memory' is an array declared by user
  */
-static inline void la_buffer_init(la_buffer *buffer, const float *memory, const uint32_t capacity) {
-	buffer->data = (float *)memory;
+static inline void la_buffer_init(la_buffer *buffer, float *memory, const uint32_t capacity) {
+	buffer->data = memory;
 	buffer->capacity = (uint32_t)capacity;
 	buffer->write_index = 0;
 
@@ -26,7 +28,6 @@ static inline void la_buffer_init(la_buffer *buffer, const float *memory, const 
 	for (uint32_t i = 0; i < buffer->size; i++) {
 		buffer->data[i] = 0.0f;
 	}
-
 	return;
 }
 

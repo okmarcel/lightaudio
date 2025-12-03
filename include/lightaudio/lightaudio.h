@@ -3,8 +3,9 @@
 
 #include <stdio.h>
 
-#include "lightaudio/buffer.h"
+#include "lightaudio/audio.h"
 #include "lightaudio/utils.h"
+#include "lightaudio/buffer.h"
 
 #endif
 
